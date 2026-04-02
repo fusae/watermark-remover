@@ -1,0 +1,17 @@
+[project]
+name = "watermark-remover"
+version = "0.1.0"
+description = "批量去水印工具 - 自动检测四角水印并 AI 修复"
+requires-python = ">=3.9"
+dependencies = [
+    "opencv-python>=4.8",
+    "numpy>=1.24",
+    "Pillow>=10.0",
+    "iopaint>=1.5",
+]
+
+[project.scripts]
+watermark-remover = "watermark_remover.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
