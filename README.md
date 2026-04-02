@@ -5,12 +5,26 @@
 ## 安装
 
 ```bash
+# 创建虚拟环境
+python3 -m venv .venv
+source .venv/bin/activate
+
+# 升级 pip
+pip install -U pip
+
+# 安装项目
 pip install -e .
+
+# 安装开发依赖（可选）
+pip install -e .[dev]
 ```
 
 ## 使用
 
 ```bash
+# 启动 Web 界面
+watermark-remover-web
+
 # 处理单张图片
 watermark-remover image.jpg
 

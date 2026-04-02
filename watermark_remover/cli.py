@@ -4,7 +4,15 @@ import argparse
 import sys
 from pathlib import Path
 
-from .processor import SUPPORTED_EXTENSIONS, process_directory, process_image
+if __package__ in (None, ""):
+    sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+    from watermark_remover.processor import (
+        SUPPORTED_EXTENSIONS,
+        process_directory,
+        process_image,
+    )
+else:
+    from .processor import SUPPORTED_EXTENSIONS, process_directory, process_image
 
 
 def main():
