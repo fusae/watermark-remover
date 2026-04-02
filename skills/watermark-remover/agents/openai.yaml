@@ -1,0 +1,4 @@
+interface:
+  display_name: "Watermark Remover"
+  short_description: "Run the local CLI to remove image watermarks."
+  default_prompt: "Use $watermark-remover to remove watermarks from local images with the project CLI."
