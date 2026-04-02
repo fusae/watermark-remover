@@ -8,10 +8,12 @@ dependencies = [
     "numpy>=1.24",
     "Pillow>=10.0",
     "iopaint>=1.5",
+    "gradio>=4.0",
 ]
 
 [project.scripts]
 watermark-remover = "watermark_remover.cli:main"
+watermark-remover-web = "watermark_remover.web:main"
 
 [project.optional-dependencies]
 dev = ["pytest>=7.0"]
