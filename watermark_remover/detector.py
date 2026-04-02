@@ -17,6 +17,8 @@ def detect_watermark_mask(
     h, w = image.shape[:2]
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     mask = np.zeros((h, w), dtype=np.uint8)
+    threshold = int(threshold)
+    padding = int(padding)
 
     ch = int(h * corner_ratio)
     cw = int(w * corner_ratio)
