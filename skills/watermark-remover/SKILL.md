@@ -1,5 +1,6 @@
 ---
 name: watermark-remover
+version: 0.1.0
 description: Automatically detects and removes watermarks from images using AI-powered inpainting. Use when user asks to "remove watermark", "clean image", or "去水印".
 ---
 
